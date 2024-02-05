@@ -1,0 +1,87 @@
+body {
+    background-color: rgb(64, 96, 96);
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span {
+    font-family: sans-serif;
+    color: whitesmoke;
+}
+
+.marquee {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: whitesmoke;
+    /* padding: 20px; */
+}
+
+.page-title {
+    text-align: center;
+    font-size: 52px;
+    color: whitesmoke;
+    color: orange;
+}
+
+.projects-container {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-container {
+    border: 1px solid rgb(176, 165, 176);
+    padding: 12px;
+}
+
+.project-container:hover {
+    background-color: rgba(226, 59, 206, 0.4);
+}
+
+.project-image {
+    width: 100%;
+}
+
+.project-tags-container {
+    margin-top: 12px;
+}
+
+.project-tag {
+    display: inline-block;
+    background: #1af3ef;
+    padding: 6px;
+}
+
+.project-tag-php {
+    background-color: blueviolet;
+}
+
+.project-tag-laravel {
+    background-color: tomato;
+}
+
+.project-tag-mysql {
+    background-color: darkcyan;
+}
+
+
+.footer {
+    border-top: #8a8989 1px solid;
+    background-color: #333;
+    position: sticky;
+    top: 92vh;
+    width: 100vw;
+    min-height: 8vh;
+}

@@ -1,3 +1,67 @@
-<html>
-    <h1>Welcome to my page, cornudos</h1>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Proyectos</title>
+</head>
+
+<body id="body">
+    <h1 class="page-title">Acá podés ver algunos proyectos</h1>
+
+    <div class="projects-container">
+        <div class="project-container">
+            <img src="img/libro-pluma.png" class="project-image" alt="">
+            <h2 class="proyect-title">Blog</h2>
+            <p>El clásico blog ...</p>
+            <button id="btn-details" class="btn-details">ver detalle</button>
+            <div class="project-tags-container">
+                <span class="project-tag project-tag-php">php</span>
+                <span class="project-tag project-tag-laravel">laravel</span>
+                <span class="project-tag project-tag-mysql">mysql</span>
+            </div>
+        </div>
+        <div class="project-container">
+            <img src="img/platita.png" class="project-image" alt="">
+            <h2 class="proyect-title">Trabajo</h2>
+            <p>Publica o postulate a ofertas de trabajo.</p>
+            <button class="btn-details">ver detalle</button>
+            <div class="project-tags-container">
+                <span class="project-tag project-tag-php">php</span>
+                <span class="project-tag project-tag-laravel">laravel</span>
+                <span class="project-tag project-tag-mysql">mysql</span>
+            </div>
+        </div>
+        <div class="project-container">
+            <img src="img/twitter.png" class="project-image" alt="">
+            <h2 class="proyect-title">Red social</h2>
+            <p>Una especie de twitter ...</p>
+            <button class="btn-details">ver detalle</button>
+            <div class="project-tags-container">
+                <span class="project-tag project-tag-php">php</span>
+                <span class="project-tag project-tag-laravel">laravel</span>
+                <span class="project-tag project-tag-mysql">mysql</span>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+    <marquee class="marquee">Página en construcción <img src="img/avatar-round-transparent.png" alt=""
+            style="width: 50px"></marquee>
+    
+    </footer>
+    <script>
+        const buttons = document.querySelectorAll(".btn-details");
+
+        const msg = "En construcción...";
+        buttons.forEach((btn) => btn.addEventListener('click', handleClick));
+
+        function handleClick() {
+            alert(msg);
+        }
+    </script>
+</body>
+
 </html>
